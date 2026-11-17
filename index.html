@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Space Relics</title>
+  <meta name="description" content="A desktop app for finding the spacecraft humanity left on the Moon, on Mars and in deep space. NASA Space Apps Challenge 2026, Team Kuzgun Aerospace.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500&family=Newsreader:opsz,wght@6..72,300;6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ ÜST MENÜ ============ -->
+<header class="ust">
+  <a class="marka" href="#">Space Relics</a>
+  <nav class="menu">
+    <a href="#fikir" data-i18n="nav_idea">The idea</a>
+    <a href="#katalog" data-i18n="nav_catalogue">Catalogue</a>
+    <a href="#veri" data-i18n="nav_data">Data</a>
+    <a href="#ekip" data-i18n="nav_team">Team</a>
+  </nav>
+  <div class="ust-sag">
+    <div class="dil" role="group" aria-label="Language">
+      <button type="button" data-dil="en">EN</button>
+      <button type="button" data-dil="tr">TR</button>
+    </div>
+    <a class="ust-indir" href="#indir" data-i18n="nav_download">Download</a>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ GİRİŞ ============ -->
+<section class="giris kap">
+  <p class="ust-not" data-i18n="hero_kicker">NASA Space Apps Challenge 2026 &nbsp;/&nbsp; Abandoned but Not Forgotten &nbsp;/&nbsp; Denizli</p>
+  <h1 data-i18n="hero_title">Thirty-one spacecraft finished their missions. They are still out there.</h1>
+  <div class="giris-alt">
+    <p class="giris-yazi" data-i18n="hero_text">Space Relics is a desktop app for finding them. Fly through the solar system, land on the Moon and Mars, and open the record of every lander, rover and probe we left behind.</p>
+    <div class="giris-butonlar">
+      <a class="btn" href="#indir" data-i18n="btn_download">Download for Windows</a>
+      <a class="baglanti" href="#katalog" data-i18n="btn_catalogue">See the catalogue →</a>
+    </div>
+  </div>
+  <figure class="sekil genis belir">
+    <img src="img/ay.jpg" alt="The Moon in Space Relics with spacecraft markers">
+    <figcaption><span>Fig. 1</span> <span data-i18n="fig1">The Moon in Space Relics. Its terrain comes from LRO laser altimetry; each marker is a spacecraft at its published landing site.</span></figcaption>
+  </figure>
+</section>
+
+<!-- ============ FİKİR ============ -->
+<section class="bolum kap" id="fikir">
+  <div class="bolum-bas">
+    <span class="bolum-no">01</span>
+    <h2 data-i18n="idea_title">The idea</h2>
+  </div>
+  <div class="iki-sutun">
+    <p class="buyuk-yazi" data-i18n="idea_lead">When a mission ends, the news moves on. The hardware does not. Apollo descent stages, silent rovers and probes leaving the solar system are still where we left them.</p>
+    <div class="metin">
+      <p data-i18n="idea_p1">We wanted to treat them as relics, not debris: objects with a date, a place and a story. So we built a map you explore yourself. You fly, you search, and when you find a spacecraft you open its record.</p>
+      <p data-i18n="idea_p2">Every record says what the spacecraft was for, what it found and what is left of it today, with NASA's own photographs and recordings.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NASIL ÇALIŞIR ============ -->
+<section class="bolum kap" id="nasil">
+  <div class="bolum-bas">
+    <span class="bolum-no">02</span>
+    <h2 data-i18n="how_title">How it works</h2>
+  </div>
+
+  <div class="satir belir">
+    <figure class="sekil"><img src="img/uzay.jpg" alt="Flying through the solar system">
+      <figcaption><span>Fig. 2</span> <span data-i18n="fig2">The planets are placed where they are today.</span></figcaption></figure>
+    <div class="satir-yazi">
+      <h3 data-i18n="how1_t">Fly</h3>
+      <p data-i18n="how1_p">Steer a rocket with W A S D, or let the autopilot take you to a planet or a probe. Deep-space probes move in real time, and their distance from Earth updates every second.</p>
+    </div>
+  </div>
+
+  <div class="satir ters belir">
+    <figure class="sekil"><img src="img/arsiv.jpg" alt="Archive list and status colours">
+      <figcaption><span>Fig. 3</span> <span data-i18n="fig3">The archive list and the status colours.</span></figcaption></figure>
+    <div class="satir-yazi">
+      <h3 data-i18n="how2_t">Land and search</h3>
+      <p data-i18n="how2_p">Press E near the Moon or Mars to land. Each spacecraft sits at its real latitude and longitude. Its colour tells you what happened to it: still working, silent, crashed, or left behind on purpose.</p>
+    </div>
+  </div>
+
+  <div class="satir belir">
+    <figure class="sekil"><img src="img/fotograf.jpg" alt="Apollo 11 record with a NASA photograph">
+      <figcaption><span>Fig. 4</span> <span data-i18n="fig4">The Apollo 11 record, with Buzz Aldrin's bootprint (NASA AS11-40-5878).</span></figcaption></figure>
+    <div class="satir-yazi">
+      <h3 data-i18n="how3_t">Open the record</h3>
+      <p data-i18n="how3_p">The record is laid out like an archive file: a catalogue number, a status stamp, a rotating 3D model, photographs, sources, and for some spacecraft the original audio, such as "The Eagle has landed".</p>
+    </div>
+  </div>
+
+  <div class="satir ters belir">
+    <figure class="sekil"><img src="img/zaman.jpg" alt="The timeline at 1972">
+      <figcaption><span>Fig. 5</span> <span data-i18n="fig5">The timeline, paused in 1972.</span></figcaption></figure>
+    <div class="satir-yazi">
+      <h3 data-i18n="how4_t">Replay the years</h3>
+      <p data-i18n="how4_p">Press Z and drag from 1962 to today. Spacecraft appear in the year they arrived, so you can watch sixty years of exploration build up on the surface.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KATALOG ============ -->
+<section class="bolum kap" id="katalog">
+  <div class="bolum-bas">
+    <span class="bolum-no">03</span>
+    <h2 data-i18n="cat_title">The catalogue</h2>
+  </div>
+  <p class="metin dar" data-i18n="cat_lead">All 31 spacecraft in the app, by where they are, with the year they appear on our timeline.</p>
+  <div class="filtre" role="tablist">
+    <button type="button" class="secili" data-filtre="all" data-i18n="f_all">All</button>
+    <button type="button" data-filtre="moon" data-i18n="f_moon">Moon</button>
+    <button type="button" data-filtre="mars" data-i18n="f_mars">Mars</button>
+    <button type="button" data-filtre="space" data-i18n="f_space">Deep space</button>
+  </div>
+  <div class="tablo-kap">
+    <table class="katalog">
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th data-i18n="th_name">Spacecraft</th>
+          <th data-i18n="th_note">Known for</th>
+          <th data-i18n="th_where">Where</th>
+          <th data-i18n="th_year">Year</th>
+          <th data-i18n="th_status">Status</th>
+        </tr>
+      </thead>
+      <tbody id="katalog-govde"></tbody>
+    </table>
+  </div>
+  <p class="aciklama-kucuk"><span class="nokta n0"></span><span data-i18n="st0">Still working</span>
+    <span class="nokta n1"></span><span data-i18n="st1">Silent</span>
+    <span class="nokta n2"></span><span data-i18n="st2">Crashed or lost</span>
+    <span class="nokta n3"></span><span data-i18n="st3">Left behind or leaving</span></p>
+</section>
+
+<!-- ============ VERİ ============ -->
+<section class="bolum kap" id="veri">
+  <div class="bolum-bas">
+    <span class="bolum-no">04</span>
+    <h2 data-i18n="data_title">Where the data comes from</h2>
+  </div>
+  <p class="metin dar" data-i18n="data_lead">The app runs on NASA open data. We simplified distances and exaggerated heights so they fit on a screen, and we say so in the app.</p>
+  <dl class="kaynaklar">
+    <div><dt data-i18n="d1_t">Locations, dates, stories</dt><dd data-i18n="d1_d">NASA mission pages. Every record links to its sources.</dd></div>
+    <div><dt data-i18n="d2_t">47 photographs</dt><dd><a href="https://images.nasa.gov">NASA Image and Video Library</a></dd></div>
+    <div><dt data-i18n="d3_t">7 audio recordings</dt><dd data-i18n="d3_d">NASA audio archive: Apollo 11, Voyager, Cassini, Perseverance.</dd></div>
+    <div><dt data-i18n="d4_t">Moon terrain</dt><dd><a href="https://pds-geosciences.wustl.edu/lro/lro-l-lola-3-rdr-v1/lrolol_1xxx/data/lola_gdr/cylindrical/img/">LRO LOLA</a> <span data-i18n="d4_d">laser altimetry, NASA PDS</span></dd></div>
+    <div><dt data-i18n="d5_t">Mars terrain</dt><dd><a href="https://pds-geosciences.wustl.edu/mgs/mgs-m-mola-5-megdr-l3-v1/mgsl_300x/meg004/">MGS MOLA</a> <span data-i18n="d4_d">laser altimetry, NASA PDS</span></dd></div>
+    <div><dt data-i18n="d6_t">3D models</dt><dd><a href="https://science.nasa.gov/3d-resources/">NASA 3D Resources</a><span data-i18n="d6_d">, plus two built by our team</span></dd></div>
+    <div><dt data-i18n="d7_t">Planet textures</dt><dd><a href="https://www.solarsystemscope.com/textures/">Solar System Scope</a> (CC BY 4.0)</dd></div>
+  </dl>
+</section>
+
+<!-- ============ MODELLER ============ -->
+<section class="bolum kap" id="model">
+  <div class="bolum-bas">
+    <span class="bolum-no">05</span>
+    <h2 data-i18n="model_title">Drawn and built by us</h2>
+  </div>
+  <p class="metin dar" data-i18n="model_lead">NASA does not publish a model of every spacecraft. For the Phoenix Mars lander we drew front and side views from NASA photographs, then modelled it in Blender. We did the same for the Lunar Roving Vehicle parked at the Apollo 15, 16 and 17 sites.</p>
+  <div class="uclu">
+    <figure class="sekil cizim belir"><div class="cizim-zemin"><img src="img/phoenix-on.png" alt="Phoenix, front view drawing"></div>
+      <figcaption><span>Fig. 6</span> <span data-i18n="fig6">Phoenix, front view</span></figcaption></figure>
+    <figure class="sekil cizim belir"><div class="cizim-zemin"><img src="img/phoenix-yan.png" alt="Phoenix, side view drawing"></div>
+      <figcaption><span>Fig. 7</span> <span data-i18n="fig7">Phoenix, side view</span></figcaption></figure>
+    <figure class="sekil belir"><img src="img/phoenix-3d.jpg" alt="Phoenix 3D model in Blender">
+      <figcaption><span>Fig. 8</span> <span data-i18n="fig8">The finished model in Blender</span></figcaption></figure>
+  </div>
+</section>
+
+<!-- ============ EKİP ============ -->
+<section class="bolum kap" id="ekip">
+  <div class="bolum-bas">
+    <span class="bolum-no">06</span>
+    <h2 data-i18n="team_title">Team Kuzgun Aerospace</h2>
+  </div>
+  <div class="ekip">
+    <img class="ekip-logo" src="img/kuzgun.png" alt="Kuzgun Aerospace">
+    <div class="kisi">
+      <h3>Efe Dağdeviren</h3>
+      <p class="rol" data-i18n="r_efe">Software, interface, technical drawings</p>
+      <p data-i18n="p_efe">Built and tested the app step by step, designed the interface and drew the reference sketches for our models.</p>
+    </div>
+    <div class="kisi">
+      <h3>Belinay Nur Öner</h3>
+      <p class="rol" data-i18n="r_bel">Research, data, 3D modelling</p>
+      <p data-i18n="p_bel">Collected and checked the records of all 31 spacecraft, wrote their stories and modelled Phoenix and the Lunar Rover.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ İNDİR ============ -->
+<section class="bolum kap" id="indir">
+  <div class="bolum-bas">
+    <span class="bolum-no">07</span>
+    <h2 data-i18n="dl_title">Download</h2>
+  </div>
+  <div class="indir">
+    <div>
+      <!-- İndirme linki: GitHub Releases'a zip'i yükleyince çalışır -->
+      <a class="btn buyuk" href="https://github.com/kuzgunaerospace/space-relics/releases/latest" data-i18n="btn_download">Download for Windows</a>
+      <table class="gereksinim">
+        <tr><th data-i18n="req_os">System</th><td>Windows 10 / 11, 64-bit</td></tr>
+        <tr><th data-i18n="req_size">Size</th><td data-i18n="req_size_v">About 130 MB, no installation</td></tr>
+        <tr><th data-i18n="req_lang">Languages</th><td data-i18n="req_lang_v">English, Turkish</td></tr>
+        <tr><th data-i18n="req_net">Internet</th><td data-i18n="req_net_v">Not needed</td></tr>
+      </table>
+    </div>
+    <ol class="adimlar">
+      <li data-i18n="s1">Unzip the file and open <b>UzayHatiralari.exe</b>.</li>
+      <li data-i18n="s2">If Windows shows a warning, choose <b>More info</b>, then <b>Run anyway</b>.</li>
+      <li data-i18n="s3">Press <b>Enter</b> to launch. <b>W A S D</b> to fly, <b>E</b> to land, <b>N</b> for the next spacecraft, <b>Z</b> for the timeline, <b>L</b> to switch language.</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ İLETİŞİM ============ -->
+<section class="bolum kap" id="iletisim">
+  <div class="bolum-bas">
+    <span class="bolum-no">08</span>
+    <h2 data-i18n="contact_title">Contact</h2>
+  </div>
+  <!-- BURAYA kendi bilgilerinizi yazın. İstemediğiniz satırı <div> ... </div> ile birlikte silin. -->
+  <dl class="kaynaklar iletisim">
+    <div><dt data-i18n="c_mail">E-mail</dt><dd><a href="mailto:kuzgunaerospace@gmail.com">kuzgunaerospace@gmail.com</a></dd></div>
+    <div><dt>Instagram</dt><dd><a href="https://instagram.com/kuzgunaerospace">@kuzgunaerospace</a></dd></div>
+    <div><dt>GitHub</dt><dd><a href="https://github.com/kuzgunaerospace/space-relics">https://github.com/kuzgunaerospace/space-relics</a></dd></div>
+  </dl>
+</section>
+
+</main>
+
+<footer class="alt kap">
+  <img src="img/spaceapps.png" alt="NASA Space Apps Challenge">
+  <div>
+    <p data-i18n="foot1">Made for the 2026 NASA Space Apps Challenge, Denizli. Space Relics is not affiliated with or endorsed by NASA.</p>
+    <p data-i18n="foot2">We used an AI assistant (Claude) to write most of the app's code. The idea, research, data, drawings and our own models are our work.</p>
+    <p>© 2026 Kuzgun Aerospace</p>
+  </div>
+</footer>
+
+<script src="dil.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
