@@ -1,0 +1,165 @@
+//YAZILAR
+
+const YAZILAR = {
+  en: {
+    nav_idea: "The idea", nav_catalogue: "Catalogue", nav_data: "Data", nav_team: "Team", nav_download: "Download",
+    hero_kicker: "NASA Space Apps Challenge 2026 &nbsp;/&nbsp; Abandoned but Not Forgotten &nbsp;/&nbsp; Denizli",
+    hero_title: "Thirty-one spacecraft finished their missions. They are still out there.",
+    hero_text: "Space Relics is a desktop app for finding them. Fly through the solar system, land on the Moon and Mars, and open the record of every lander, rover and probe we left behind.",
+    btn_download: "Download for Windows", btn_catalogue: "See the catalogue →",
+    fig1: "The Moon in Space Relics. Its terrain comes from LRO laser altimetry; each marker is a spacecraft at its published landing site.",
+
+    idea_title: "The idea",
+    idea_lead: "When a mission ends, the news moves on. The hardware does not. Apollo descent stages, silent rovers and probes leaving the solar system are still where we left them.",
+    idea_p1: "We wanted to treat them as relics, not debris: objects with a date, a place and a story. So we built a map you explore yourself. You fly, you search, and when you find a spacecraft you open its record.",
+    idea_p2: "Every record says what the spacecraft was for, what it found and what is left of it today, with NASA's own photographs and recordings.",
+
+    how_title: "How it works",
+    fig2: "The planets are placed where they are today.",
+    how1_t: "Fly",
+    how1_p: "Steer a rocket with W A S D, or let the autopilot take you to a planet or a probe. Deep-space probes move in real time, and their distance from Earth updates every second.",
+    fig3: "The archive list and the status colours.",
+    how2_t: "Land and search",
+    how2_p: "Press E near the Moon or Mars to land. Each spacecraft sits at its real latitude and longitude. Its colour tells you what happened to it: still working, silent, crashed, or left behind on purpose.",
+    fig4: "The Apollo 11 record, with Buzz Aldrin's bootprint (NASA AS11-40-5878).",
+    how3_t: "Open the record",
+    how3_p: "The record is laid out like an archive file: a catalogue number, a status stamp, a rotating 3D model, photographs, sources, and for some spacecraft the original audio, such as \"The Eagle has landed\".",
+    fig5: "The timeline, paused in 1972.",
+    how4_t: "Replay the years",
+    how4_p: "Press Z and drag from 1962 to today. Spacecraft appear in the year they arrived, so you can watch sixty years of exploration build up on the surface.",
+
+    cat_title: "The catalogue",
+    cat_lead: "All 31 spacecraft in the app, by where they are, with the year they appear on our timeline.",
+    f_all: "All", f_moon: "Moon", f_mars: "Mars", f_space: "Deep space",
+    th_name: "Spacecraft", th_note: "Known for", th_where: "Where", th_year: "Year", th_status: "Status",
+    st0: "Still working", st1: "Silent", st2: "Crashed or lost", st3: "Left behind or leaving",
+
+    data_title: "Where the data comes from",
+    data_lead: "The app runs on NASA open data. We simplified distances and exaggerated heights so they fit on a screen, and we say so in the app.",
+    d1_t: "Locations, dates, stories", d1_d: "NASA mission pages. Every record links to its sources.",
+    d2_t: "47 photographs", d3_t: "7 audio recordings", d3_d: "NASA audio archive: Apollo 11, Voyager, Cassini, Perseverance.",
+    d4_t: "Moon terrain", d4_d: "laser altimetry, NASA PDS", d5_t: "Mars terrain",
+    d6_t: "3D models", d6_d: ", plus two built by our team", d7_t: "Planet textures",
+
+    model_title: "Drawn and built by us",
+    model_lead: "NASA does not publish a model of every spacecraft. For the Phoenix Mars lander we drew front and side views from NASA photographs, then modelled it in Blender. We did the same for the Lunar Roving Vehicle parked at the Apollo 15, 16 and 17 sites.",
+    fig6: "Phoenix, front view", fig7: "Phoenix, side view", fig8: "The finished model in Blender",
+
+    team_title: "Team Kuzgun Aerospace",
+    r_efe: "Software, interface, technical drawings",
+    p_efe: "Built and tested the app step by step, designed the interface and drew the reference sketches for our models.",
+    r_bel: "Research, data, 3D modelling",
+    p_bel: "Collected and checked the records of all 31 spacecraft, converted the prepared drafts into 3D models.",
+
+    dl_title: "Download",
+    req_os: "System", req_size: "Size", req_size_v: "About 130 MB, no installation",
+    req_lang: "Languages", req_lang_v: "English, Turkish", req_net: "Internet", req_net_v: "Not needed",
+    s1: "Unzip the file and open <b>UzayHatiralari.exe</b>.",
+    s2: "If Windows shows a warning, choose <b>More info</b>, then <b>Run anyway</b>.",
+    s3: "Press <b>Enter</b> to launch. <b>W A S D</b> to fly, <b>E</b> to land, <b>N</b> for the next spacecraft, <b>Z</b> for the timeline, <b>L</b> to switch language.",
+
+    contact_title: "Contact", c_mail: "E-mail",
+    foot1: "Made for the 2026 NASA Space Apps Challenge, Denizli. Space Relics is not affiliated with or endorsed by NASA.",
+    foot2: "We used an AI assistant (Claude) to help with code optimization and the placement of 3D models, as well as for language translation. The idea, research, data, drawings and our own models are our work.",
+    yer_moon: "Moon", yer_mars: "Mars", yer_space: "Deep space"
+  },
+
+  tr: {
+    nav_idea: "Fikir", nav_catalogue: "Katalog", nav_data: "Veri", nav_team: "Ekip", nav_download: "İndir",
+    hero_kicker: "NASA Space Apps Challenge 2026 &nbsp;/&nbsp; Abandoned but Not Forgotten &nbsp;/&nbsp; Denizli",
+    hero_title: "Otuz bir uzay aracı görevini tamamladı. Hâlâ oradalar.",
+    hero_text: "Uzay Hatıraları onları bulmanı sağlayan bir masaüstü uygulaması. Güneş Sistemi'nde uç, Ay'a ve Mars'a in, geride bıraktığımız her iniş aracının, gezginin ve sondanın kaydını aç.",
+    btn_download: "Windows için indir", btn_catalogue: "Kataloğa bak →",
+    fig1: "Uzay Hatıraları'nda Ay. Zemin, LRO'nun lazer ölçümlerinden geliyor; her işaret, NASA'nın yayımladığı iniş yerindeki bir araç.",
+
+    idea_title: "Fikir",
+    idea_lead: "Bir görev bitince haberler başka konuya geçer, ama araç olduğu yerde kalır. Apollo iniş modülleri, susmuş gezginler ve Güneş Sistemi'nden çıkan sondalar hâlâ bıraktığımız yerde.",
+    idea_p1: "Onlara çöp değil, hatıra olarak bakmak istedik: bir tarihi, bir yeri ve bir hikâyesi olan nesneler. Bu yüzden kendin keşfettiğin bir harita yaptık. Uçuyorsun, arıyorsun ve bir aracı bulunca kaydını açıyorsun.",
+    idea_p2: "Her kayıt aracın ne için gönderildiğini, ne bulduğunu ve bugün ondan geriye ne kaldığını, NASA'nın kendi fotoğrafları ve ses kayıtlarıyla anlatıyor.",
+
+    how_title: "Nasıl çalışır",
+    fig2: "Gezegenler bugün bulundukları yerde.",
+    how1_t: "Uç",
+    how1_p: "Roketi W A S D ile yönet ya da otopilotun seni bir gezegene veya sondaya götürmesine izin ver. Derin uzay sondaları gerçek zamanlı ilerliyor, Dünya'ya uzaklıkları her saniye güncelleniyor.",
+    fig3: "Arşiv listesi ve durum renkleri.",
+    how2_t: "İn ve ara",
+    how2_p: "Ay'a ya da Mars'a yaklaşınca E ile in. Her araç gerçek enlem ve boylamında duruyor. Rengi başına ne geldiğini söylüyor: hâlâ çalışıyor, sustu, çarptı ya da bilerek bırakıldı.",
+    fig4: "Apollo 11 kaydı ve Buzz Aldrin'in ayak izi (NASA AS11-40-5878).",
+    how3_t: "Kaydı aç",
+    how3_p: "Kayıt bir arşiv dosyası gibi düzenlendi: katalog numarası, durum mührü, dönen bir 3D model, fotoğraflar, kaynaklar ve bazı araçlarda \"The Eagle has landed\" gibi orijinal ses kayıtları.",
+    fig5: "Zaman çizelgesi, 1972'de durdurulmuş.",
+    how4_t: "Yılları geri sar",
+    how4_p: "Z'ye bas ve 1962'den bugüne kaydır. Araçlar geldikleri yılda beliriyor; altmış yıllık keşfin yüzeyde birikmesini izleyebiliyorsun.",
+
+    cat_title: "Katalog",
+    cat_lead: "Uygulamadaki 31 aracın tamamı; bulundukları yer ve zaman çizelgemizde göründükleri yılla.",
+    f_all: "Tümü", f_moon: "Ay", f_mars: "Mars", f_space: "Derin uzay",
+    th_name: "Araç", th_note: "Bilinen yönü", th_where: "Yer", th_year: "Yıl", th_status: "Durum",
+    st0: "Hâlâ çalışıyor", st1: "Sessiz", st2: "Çarptı ya da kayboldu", st3: "Bırakıldı ya da uzaklaşıyor",
+
+    data_title: "Veriler nereden geliyor",
+    data_lead: "Uygulama NASA'nın açık verisiyle çalışıyor. Ekrana sığsın diye mesafeleri sıkıştırdık ve yükseklikleri abarttık; bunu uygulamada da belirtiyoruz.",
+    d1_t: "Konumlar, tarihler, hikâyeler", d1_d: "NASA görev sayfaları. Her kayıtta kaynak linkleri var.",
+    d2_t: "47 fotoğraf", d3_t: "7 ses kaydı", d3_d: "NASA ses arşivi: Apollo 11, Voyager, Cassini, Perseverance.",
+    d4_t: "Ay zemini", d4_d: "lazer altimetre verisi, NASA PDS", d5_t: "Mars zemini",
+    d6_t: "3D modeller", d6_d: " ve ekibimizin yaptığı iki model", d7_t: "Gezegen dokuları",
+
+    model_title: "Kendi çizip yaptıklarımız",
+    model_lead: "NASA her aracın modelini yayımlamıyor. Phoenix Mars iniş aracının ön ve yan görünüşlerini NASA fotoğraflarından çizdik, sonra Blender'da modelledik. Apollo 15, 16 ve 17'nin yanında duran Ay arabası için de aynısını yaptık.",
+    fig6: "Phoenix, önden görünüş", fig7: "Phoenix, yandan görünüş", fig8: "Blender'da biten model",
+
+    team_title: "Kuzgun Aerospace Ekibi",
+    r_efe: "Yazılım, arayüz, teknik çizimler",
+    p_efe: "Uygulamayı adım adım kurup test etti, arayüzü tasarladı ve modellerimizin referans çizimlerini yaptı.",
+    r_bel: "Araştırma, veri, 3D modelleme",
+    p_bel: "31 aracın kayıtlarını topladı ve kontrol etti, hikâyelerini yazdı, hazırlanan taslakları 3D modele çevirdi.",
+
+    dl_title: "İndir",
+    req_os: "Sistem", req_size: "Boyut", req_size_v: "Yaklaşık 130 MB, kurulum yok",
+    req_lang: "Diller", req_lang_v: "Türkçe, İngilizce", req_net: "İnternet", req_net_v: "Gerekmiyor",
+    s1: "Dosyayı zip'ten çıkar ve <b>UzayHatiralari.exe</b>'yi aç.",
+    s2: "Windows uyarı verirse <b>Ek bilgi</b>'ye, sonra <b>Yine de çalıştır</b>'a bas.",
+    s3: "Başlamak için <b>Enter</b>. Uçmak için <b>W A S D</b>, inmek için <b>E</b>, sıradaki araç için <b>N</b>, zaman çizelgesi için <b>Z</b>, dil için <b>L</b>.",
+
+    contact_title: "İletişim", c_mail: "E-posta",
+    foot1: "2026 NASA Space Apps Challenge Denizli için yapıldı. Uzay Hatıraları'nın NASA ile resmî bir bağı yoktur.",
+    foot2: "Kod optimizasyonu ve 3D modellerin yerleştirilmesinde yardımcı olması ve ayrıca dil çevirisi için bir yapay zeka asistanı (Claude) kullandık. Fikir, araştırma, veri, çizimler ve kendi modellerimiz bizim emeğimiz.",
+    yer_moon: "Ay", yer_mars: "Mars", yer_space: "Derin uzay"
+  }
+};
+
+// ===== KATALOG: 31 araç =====
+// [kimlik, İngilizce ad, Türkçe ad, yer, yıl, durum grubu (0-3), İngilizce not, Türkçe not]
+const ARACLAR = [
+  ["ranger-7", "Ranger 7", "Ranger 7", "moon", 1964, 2, "First close-up photos of the Moon", "Ay'ın ilk yakın fotoğrafları"],
+  ["surveyor-1", "Surveyor 1", "Surveyor 1", "moon", 1966, 1, "First US soft landing on the Moon", "ABD'nin Ay'a ilk yumuşak inişi"],
+  ["apollo-11", "Apollo 11", "Apollo 11", "moon", 1969, 1, "Tranquility Base, the first footprints", "Huzur Üssü, ilk insan ayak izleri"],
+  ["apollo-12", "Apollo 12 & Surveyor 3", "Apollo 12 ve Surveyor 3", "moon", 1969, 1, "Visitors after two and a half years", "İki buçuk yıl sonra gelen ziyaretçiler"],
+  ["apollo-14", "Apollo 14", "Apollo 14", "moon", 1971, 1, "Fra Mauro and the first golf on the Moon", "Fra Mauro tepeleri ve Ay'daki ilk golf"],
+  ["apollo-15", "Apollo 15", "Apollo 15", "moon", 1971, 1, "The first lunar car", "İlk Ay arabası"],
+  ["apollo-16", "Apollo 16", "Apollo 16", "moon", 1972, 1, "The highlands and the first Moon telescope", "Yaylalar ve Ay'daki ilk teleskop"],
+  ["apollo-17", "Apollo 17", "Apollo 17", "moon", 1972, 1, "The last footprints on the Moon", "Ay'daki son ayak izleri"],
+  ["lunar-prospector", "Lunar Prospector", "Lunar Prospector", "moon", 1999, 2, "Ice hunter, and the only grave on the Moon", "Buz avcısı ve Ay'daki tek mezar"],
+  ["lcross", "LCROSS & Centaur", "LCROSS ve Centaur", "moon", 2009, 2, "The crash that found water in the dark", "Karanlık kraterde su bulan çarpışma"],
+  ["lro", "LRO", "LRO", "moon", 2009, 0, "The orbiter that watches over them", "Hatıraları yukarıdan izleyen uydu"],
+  ["grail", "GRAIL: Ebb & Flow", "GRAIL: Ebb ve Flow", "moon", 2012, 2, "Twins that weighed the Moon", "Ay'ın çekimini ölçen ikizler"],
+  ["viking-1", "Viking 1", "Viking 1", "mars", 1976, 1, "The first lander to work on Mars", "Mars'ta çalışan ilk iniş aracı"],
+  ["viking-2", "Viking 2", "Viking 2", "mars", 1976, 1, "Frost on Mars", "Mars'ta kırağı"],
+  ["pathfinder", "Pathfinder & Sojourner", "Pathfinder ve Sojourner", "mars", 1997, 1, "The first rover on another planet", "Başka bir gezegendeki ilk gezgin"],
+  ["mgs", "Mars Global Surveyor", "Mars Global Surveyor", "mars", 1997, 1, "The silent mapmaker", "Sessizce dönen haritacı"],
+  ["mars-polar-lander", "Mars Polar Lander", "Mars Polar Lander", "mars", 1999, 2, "The lost lander", "Kayıp iniş aracı"],
+  ["spirit", "Spirit", "Spirit", "mars", 2004, 1, "Built for 90 days, worked for 6 years", "90 gün için yapıldı, 6 yıl çalıştı"],
+  ["opportunity", "Opportunity", "Opportunity", "mars", 2004, 1, "A marathon on another world", "Başka bir dünyadaki maraton rekoru"],
+  ["mro", "MRO", "MRO", "mars", 2006, 0, "The sharp eye over Mars", "Mars'ın keskin gözü"],
+  ["phoenix", "Phoenix", "Phoenix", "mars", 2008, 1, "The robot arm that touched Martian ice", "Mars buzuna dokunan robot kol"],
+  ["insight", "InSight", "InSight", "mars", 2018, 1, "The lander that listened to Mars", "Mars'ın kalp atışlarını dinleyen araç"],
+  ["ingenuity", "Ingenuity", "Ingenuity", "mars", 2021, 1, "First flight on another planet", "Başka bir gezegende ilk uçuş"],
+  ["three-forks", "Three Forks Sample Depot", "Üç Çatal Örnek Deposu", "mars", 2022, 3, "10 tubes left for the future", "Gelecek için bırakılan 10 tüp"],
+  ["pioneer-10", "Pioneer 10", "Pioneer 10", "space", 1972, 1, "First through the asteroid belt", "Asteroit kuşağını geçen ilk araç"],
+  ["pioneer-11", "Pioneer 11", "Pioneer 11", "space", 1973, 1, "Saturn's first visitor", "Satürn'ün ilk ziyaretçisi"],
+  ["voyager-1", "Voyager 1", "Voyager 1", "space", 1977, 3, "The most distant human-made object", "En uzak insan yapımı nesne"],
+  ["voyager-2", "Voyager 2", "Voyager 2", "space", 1977, 3, "The only visitor to Uranus and Neptune", "Uranüs ve Neptün'ü gören tek araç"],
+  ["galileo", "Galileo", "Galileo", "space", 2003, 2, "Jupiter's first orbiter", "Jüpiter'in ilk yörünge aracı"],
+  ["new-horizons", "New Horizons", "New Horizons", "space", 2006, 0, "The probe that saw Pluto's heart", "Plüton'un kalbini gören araç"],
+  ["cassini", "Cassini", "Cassini", "space", 2017, 2, "Ended in Saturn to protect its moons", "Uyduları korumak için Satürn'e daldı"]
+];
